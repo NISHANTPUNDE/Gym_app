@@ -1,15 +1,23 @@
 import React from "react";
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image} from "@chakra-ui/react";
 import banner from "../image/banner.jpg";
+import {data} from "../imagelink/images";
 const Gallery = () => {
   return (
-    <Box>
-      <Box >
-        <Image maxH={'40vh'} w={"full"} src={banner} ></Image>
+    <Box h={"100vh"}>
+      <Box>
+        <Image maxH={"40vh"} w={"full"} src={banner}></Image>
       </Box>
       
-      </Box>
-  );
-};
+       { data.map(({imglink}) =>
+            <Box>
+              <img src={imglink} />
+            </Box> 
+        )
+  }
 
-export default Gallery;
+    </Box>
+  );
+}
+export default Gallery
+
