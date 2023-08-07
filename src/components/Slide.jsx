@@ -38,7 +38,7 @@ const Slide = () => {
                 <Link to={"/"}>Home </Link>
               </Button>
               <Button onClick={onClose} variant={"unstyled"}><Link to={"/Gallery"}>Gallery</Link></Button>
-              <Button onClick={onClose} variant={"unstyled"}><Link to={"/Program"}></Link>Program</Button>
+              <Button onClick={onClose} variant={"unstyled"}><Link to={"/Program"}>Program</Link></Button>
               <Button onClick={onClose} variant={"unstyled"}>Franchise</Button>
               <Button onClick={onClose} variant={"unstyled"}>Contact</Button>
               <Button onClick={onClose} variant={"unstyled"}>About Us</Button>
