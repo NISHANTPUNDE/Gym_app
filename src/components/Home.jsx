@@ -8,7 +8,7 @@ import thirdimg from "../image/landing3.jpeg";
 import circleimg from "../image/circleimg.jpeg";
 const Home = () => {
   return (
-    <Box>
+    <Box m={'0'}>
       <Carousel
         infiniteLoop
         autoPlay
@@ -29,12 +29,12 @@ const Home = () => {
       </Carousel>
       <Container mt={'8'} maxW={'container.xl'} h={'fit-content'}>
         
-        <Heading w={'fit-content'}  margin={'auto'} borderBottom={'4px'} >
+        <Heading w={'fit-content'}  margin={'auto'} borderBottom={'2px'} >
           MyGym
         </Heading>
         <Stack padding={20} flexDirection={['column','row']}>
-        <Img h={'fit-content'} src={circleimg}></Img>
-        <Text p={'5'} fontSize={['14','16']} fontFamily={'cursive'} letterSpacing={'wider'} lineHeight={['','8']}>
+        <Img h={'fit-content'} src={circleimg} ></Img>
+        <Text p={['5','15']} textAlign={'center'} fontSize={['14','16']} fontFamily={'cursive'} letterSpacing={'wider'} lineHeight={['','8']}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
         deserunt atque et dolorum aut labore, distinctio molestiae, officia
         magni voluptate nisi impedit, nulla tempore ex sapiente corrupti ullam

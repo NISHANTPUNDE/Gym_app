@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Program from "./components/Program";
+import Contact from "./components/Contact";
+import Franchise from "./components/Franchise";
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +16,9 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/Gallery" element={<Gallery />} />
       <Route path="/Program" element={<Program />} />
-      </Routes>
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/Franchise" element={<Franchise />} />
+       </Routes>
       <Footer/>
     </BrowserRouter>
   );

@@ -19,11 +19,13 @@ const Slide = () => {
     <>
       <Box marginBottom={6}>
         <Button
+          position={'fixed'}
           top={"4"}
           left={"4"}
           colorScheme="linkedin"
           onClick={onOpen}
           borderRadius={"full"}
+          zIndex={'overlay'}
         >
           >
         </Button>
@@ -39,8 +41,8 @@ const Slide = () => {
               </Button>
               <Button onClick={onClose} variant={"unstyled"}><Link to={"/Gallery"}>Gallery</Link></Button>
               <Button onClick={onClose} variant={"unstyled"}><Link to={"/Program"}>Program</Link></Button>
-              <Button onClick={onClose} variant={"unstyled"}>Franchise</Button>
-              <Button onClick={onClose} variant={"unstyled"}>Contact</Button>
+              <Button onClick={onClose} variant={"unstyled"}><Link to={"/Franchise"}>Franchise</Link></Button>
+              <Button onClick={onClose} variant={"unstyled"}><Link to={"/Contact"}>Contact</Link></Button>
               <Button onClick={onClose} variant={"unstyled"}>About Us</Button>
             </VStack>
             <HStack
