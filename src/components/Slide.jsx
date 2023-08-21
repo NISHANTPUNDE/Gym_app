@@ -13,6 +13,7 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import {FaAngleDoubleRight} from "react-icons/fa"
 const Slide = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -24,10 +25,10 @@ const Slide = () => {
           left={"4"}
           colorScheme="linkedin"
           onClick={onOpen}
-          borderRadius={"full"}
+          borderRadius={'full'}
           zIndex={'overlay'}
         >
-          >
+          <FaAngleDoubleRight/>
         </Button>
       </Box>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>

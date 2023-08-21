@@ -16,7 +16,8 @@ const Home = () => {
         showStatus={false}
         showThumbs={false}
         interval={"1000"}
-      >
+      
+        >
         <Box w={"full"} maxH={"90vh"} >
           <img src={firstimg} alt="imag" />
         </Box>
